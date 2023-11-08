@@ -9,17 +9,18 @@
 /* Begin PBXBuildFile section */
 		04187BE22AFBA14900F89827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04187BE12AFBA14900F89827 /* AppDelegate.swift */; };
 		04187BE42AFBA14900F89827 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04187BE32AFBA14900F89827 /* SceneDelegate.swift */; };
-		04187BE62AFBA14900F89827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04187BE52AFBA14900F89827 /* ViewController.swift */; };
+		04187BE62AFBA14900F89827 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04187BE52AFBA14900F89827 /* MainViewController.swift */; };
 		04187BE92AFBA14900F89827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04187BE72AFBA14900F89827 /* Main.storyboard */; };
 		04187BEB2AFBA14B00F89827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04187BEA2AFBA14B00F89827 /* Assets.xcassets */; };
 		04187BEE2AFBA14B00F89827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04187BEC2AFBA14B00F89827 /* LaunchScreen.storyboard */; };
+		04187BF72AFBA16800F89827 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 04187BF62AFBA16800F89827 /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04187BDE2AFBA14900F89827 /* HW-3.1-DY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW-3.1-DY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04187BE12AFBA14900F89827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04187BE32AFBA14900F89827 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04187BE52AFBA14900F89827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04187BE52AFBA14900F89827 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04187BE82AFBA14900F89827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04187BEA2AFBA14B00F89827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04187BED2AFBA14B00F89827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04187BF72AFBA16800F89827 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +60,7 @@
 			children = (
 				04187BE12AFBA14900F89827 /* AppDelegate.swift */,
 				04187BE32AFBA14900F89827 /* SceneDelegate.swift */,
-				04187BE52AFBA14900F89827 /* ViewController.swift */,
+				04187BE52AFBA14900F89827 /* MainViewController.swift */,
 				04187BE72AFBA14900F89827 /* Main.storyboard */,
 				04187BEA2AFBA14B00F89827 /* Assets.xcassets */,
 				04187BEC2AFBA14B00F89827 /* LaunchScreen.storyboard */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "HW-3.1-DY";
+			packageProductDependencies = (
+				04187BF62AFBA16800F89827 /* SpringAnimation */,
+			);
 			productName = "HW-3.1-DY";
 			productReference = 04187BDE2AFBA14900F89827 /* HW-3.1-DY.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 04187BD52AFBA14900F89827;
+			packageReferences = (
+				04187BF52AFBA16800F89827 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 04187BDF2AFBA14900F89827 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04187BE62AFBA14900F89827 /* ViewController.swift in Sources */,
+				04187BE62AFBA14900F89827 /* MainViewController.swift in Sources */,
 				04187BE22AFBA14900F89827 /* AppDelegate.swift in Sources */,
 				04187BE42AFBA14900F89827 /* SceneDelegate.swift in Sources */,
 			);
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04187BF52AFBA16800F89827 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04187BF62AFBA16800F89827 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04187BF52AFBA16800F89827 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04187BD62AFBA14900F89827 /* Project object */;
 }
